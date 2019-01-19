@@ -23,16 +23,6 @@ pipeline {
                 }
 
             }
-            
-        }
-         stage('Test'){
-            steps {
-                withMaven(maven : 'maven-3.3.9'){
-                        sh "mvn test"
-                }
-
-            }
-        }
         }
     }
 }
